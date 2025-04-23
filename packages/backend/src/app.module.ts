@@ -1,12 +1,13 @@
-// /backend/src/app.module.ts
+// src/app.module.ts
 import { Module } from '@nestjs/common';
 import { AppController } from './app.controller';
 import { AppService } from './app.service';
 import { PrismaModule } from './prisma/prisma.module';
 import { CustomerModule } from './customer/customer.module';
+import { ProductModule } from './product/product.module';
 
 @Module({
-  imports: [PrismaModule, CustomerModule],
+  imports: [PrismaModule, CustomerModule, ProductModule],
   controllers: [AppController],
   providers: [AppService],
 })
