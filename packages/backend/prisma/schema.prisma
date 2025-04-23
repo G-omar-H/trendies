@@ -1,4 +1,5 @@
 // This is your Prisma schema file
+// filepath: /home/dr_house/Documents/pro/trendies/packages/backend/prisma/schema.prisma
 
 generator client {
   provider = "prisma-client-js"
