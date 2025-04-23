@@ -73,3 +73,5 @@ pnpm-lock.yaml
 # Ignore all .env files (if they contain sensitive data)
 *.env*
 
+# Ignore any other files or folders that are specific to your project structure
+.history    
