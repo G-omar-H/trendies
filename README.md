@@ -93,7 +93,16 @@ A sophisticated order management system built with modern technologies. Trendies
       sudo -u postgres psql -c "ALTER USER postgres WITH PASSWORD 'postgres';"
       ```
 
-5. Start the services separately:
+5. Set up the database schema and seed data:
+    ```bash
+    # In packages/backend directory
+    npx prisma db push
+    
+    # Seed the database
+    npx ts-node prisma/seeds/simple-seed.ts
+    ```
+
+6. Start the services separately:
     ```bash
     # Terminal 1: Start the backend
     cd packages/backend
@@ -104,14 +113,6 @@ A sophisticated order management system built with modern technologies. Trendies
     pnpm run dev
     ```
 
-6. Set up the database schema and seed data:
-    ```bash
-    # In packages/backend directory
-    npx prisma db push
-    
-    # Seed the database
-    npx ts-node prisma/seeds/simple-seed.ts
-    ```
 
 
 7. Access the application:
