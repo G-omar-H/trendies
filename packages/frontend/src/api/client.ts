@@ -22,7 +22,7 @@ export const apiClient = {
     return response.json();
   },
 
-  post: async <T>(endpoint: string, data: any): Promise<T> => {
+  post: async <T>(endpoint: string, data: Record<string, unknown>): Promise<T> => {
     const response = await fetch(`${API_URL}${endpoint}`, {
       method: 'POST',
       headers: {
@@ -39,7 +39,7 @@ export const apiClient = {
     return response.json();
   },
 
-  patch: async <T>(endpoint: string, data: any): Promise<T> => {
+  patch: async <T>(endpoint: string, data: Record<string, unknown>): Promise<T> => {
     const response = await fetch(`${API_URL}${endpoint}`, {
       method: 'PATCH',
       headers: {

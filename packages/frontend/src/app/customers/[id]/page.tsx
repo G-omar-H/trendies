@@ -1,6 +1,4 @@
 'use client';
-
-import { useState } from 'react';
 import { useParams, useRouter } from 'next/navigation';
 import { useQuery, useMutation } from '@tanstack/react-query';
 import { customerApi } from '@/api/customer';
