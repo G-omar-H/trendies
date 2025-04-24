@@ -23,6 +23,10 @@ build/
 .env.local
 .env.*.local
 
+# But NOT example files
+!.env.example
+!.env.*.example
+
 # Ignore IDE/editor settings
 .vscode/
 .idea/
@@ -72,6 +76,9 @@ pnpm-lock.yaml
 
 # Ignore all .env files (if they contain sensitive data)
 *.env*
+# But NOT example files
+!.env.example
+!.env.*.example
 
 # Ignore any other files or folders that are specific to your project structure
 .history    
