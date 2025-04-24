@@ -1,0 +1,56 @@
+.navbar {
+    background-color: var(--mantine-color-dark-7);
+    height: 100%;
+    padding: var(--mantine-spacing-md);
+    display: flex;
+    flex-direction: column;
+    border-right: 1px solid var(--mantine-color-dark-6);
+  }
+  
+  .header {
+    padding: var(--mantine-spacing-xs) var(--mantine-spacing-md);
+    border-bottom: 1px solid var(--mantine-color-dark-6);
+    background-color: var(--mantine-color-dark-7);
+  }
+  
+  .logo {
+    font-size: 24px;
+    font-family: var(--mantine-font-family-headings);
+    font-weight: 600;
+    color: var(--mantine-color-white);
+    letter-spacing: 1px;
+  }
+  
+  .footer {
+    margin-top: auto;
+    padding-top: var(--mantine-spacing-md);
+    font-size: var(--mantine-font-size-xs);
+    color: var(--mantine-color-dimmed);
+    border-top: 1px solid var(--mantine-color-dark-6);
+  }
+  
+  .link {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    font-size: var(--mantine-font-size-sm);
+    color: var(--mantine-color-white);
+    padding: var(--mantine-spacing-xs) var(--mantine-spacing-sm);
+    border-radius: var(--mantine-radius-sm);
+    font-weight: 500;
+    width: 100%;
+    margin-bottom: var(--mantine-spacing-xs);
+  }
+  
+  .link:hover {
+    background-color: var(--mantine-color-dark-6);
+  }
+  
+  .linkActive {
+    background-color: var(--mantine-color-indigo-8);
+    color: var(--mantine-color-white);
+  }
+  
+  .linkActive:hover {
+    background-color: var(--mantine-color-indigo-7);
+  }
