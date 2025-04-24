@@ -80,18 +80,7 @@ A sophisticated order management system built with modern technologies. Trendies
       ```bash
       docker-compose up -d
       ```
-    - Without Docker:
-     ```bash
-      # Check if PostgreSQL is running
-      sudo service postgresql status
-      
-      # If not running, start it
-      sudo service postgresql start
-      
-      # Create database (first time only)
-      sudo -u postgres psql -c "CREATE DATABASE trendies;"
-      sudo -u postgres psql -c "ALTER USER postgres WITH PASSWORD 'postgres';"
-      ```
+
 
 5. Set up the database schema and seed data:
     ```bash
@@ -99,7 +88,7 @@ A sophisticated order management system built with modern technologies. Trendies
     npx prisma db push
     
     # Seed the database
-    npx ts-node prisma/seeds/simple-seed.ts
+    pnpm seed
     ```
 
 6. Start the services separately:
