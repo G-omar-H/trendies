@@ -81,19 +81,40 @@ A sophisticated order management system built with modern technologies. Trendies
       docker-compose up -d
       ```
     - Without Docker:
-      - Start PostgreSQL database (if needed).
-      - Then run:
-         ```bash
-         pnpm dev
-         ```
+     ```bash
+      # Check if PostgreSQL is running
+      sudo service postgresql status
+      
+      # If not running, start it
+      sudo service postgresql start
+      
+      # Create database (first time only)
+      sudo -u postgres psql -c "CREATE DATABASE trendies;"
+      sudo -u postgres psql -c "ALTER USER postgres WITH PASSWORD 'postgres';"
+      ```
 
-5. Seed the database:
+5. Start the services separately:
     ```bash
+    # Terminal 1: Start the backend
     cd packages/backend
-    pnpm run seed
+    pnpm run start:dev
+    
+    # Terminal 2: Start the frontend
+    cd packages/frontend
+    pnpm run dev
     ```
 
-6. Access the application:
+6. Set up the database schema and seed data:
+    ```bash
+    # In packages/backend directory
+    npx prisma db push
+    
+    # Seed the database
+    npx ts-node prisma/seeds/simple-seed.ts
+    ```
+
+
+7. Access the application:
     - Frontend: [http://localhost:3000](http://localhost:3000)
     - Backend API: [http://localhost:3333](http://localhost:3333)
     - API Documentation: [http://localhost:3333/api/docs](http://localhost:3333/api/docs)
