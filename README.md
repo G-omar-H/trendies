@@ -51,8 +51,8 @@ A sophisticated order management system built with modern technologies. Trendies
 ### Prerequisites
 - Node.js (v18+)
 - pnpm (v8+)
-- Docker and Docker Compose (optional)
-- PostgreSQL (if not using Docker)
+- Docker and Docker Compose
+- PostgreSQL
 
 ### Installation
 
