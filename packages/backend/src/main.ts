@@ -10,7 +10,7 @@ async function bootstrap() {
   // Enable CORS
 app.enableCors({
   origin: [
-    'https://frontend-e1zfiqmxv-g-omar-hs-projects.vercel.app', 
+    'https://trendies-front.vercel.app', 
     'http://localhost:3000'
   ],
   methods: ['GET', 'POST', 'PATCH', 'DELETE', 'OPTIONS'],
