@@ -58,7 +58,7 @@ A sophisticated order management system built with modern technologies. Trendies
 
 1. Clone the repository:
     ```bash
-    git clone https://github.com/your-username/trendies.git
+    git clone https://github.com/G-omar-H/trendies.git
     cd trendies
     ```
 
