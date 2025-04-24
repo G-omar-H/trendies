@@ -265,11 +265,11 @@ export class OrderService {
           orderItems: true,
         },
       });
-
+  
       if (!order) {
         throw new NotFoundException(`Order with ID ${id} not found`);
       }
-
+  
       // Delete order and restore product stock in a transaction
       return this.prisma.$transaction(async (prisma) => {
         // Restore product stock for each order item
@@ -283,8 +283,13 @@ export class OrderService {
             },
           });
         }
-
-        // Delete order (cascades to order items)
+  
+        // First delete the order items
+        await prisma.orderItem.deleteMany({
+          where: { orderId: id },
+        });
+  
+        // Then delete the order
         return prisma.order.delete({
           where: { id },
         });
