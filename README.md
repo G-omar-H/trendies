@@ -70,7 +70,7 @@ A sophisticated order management system built with modern technologies. Trendies
 3. Set up environment variables:
     - Copy environment templates:
       ```bash
-      cp packages/backend/.env.example .env
+      cp packages/backend/.env.example packages/backend/.env
       cp packages/frontend/.env.example packages/frontend/.env
       ```
     - Edit the `.env` files with your configuration.
