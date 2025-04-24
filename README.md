@@ -172,7 +172,7 @@ The application can be deployed using various platforms:
 - **Frontend**: Vercel, Netlify, or any static hosting
 - **Backend & Database**: Vercel, Render, Railway, or any Node.js hosting with PostgreSQL support
 
-A live demo is available at: [https://trendies-demo.vercel.app](https://trendies-demo.vercel.app)
+A live demo is available at: [https://trendies-demo.vercel.app/](https://trendies-nu.vercel.app/)
 
 ## 📈 Future Enhancements
 
