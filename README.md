@@ -110,7 +110,7 @@ A sophisticated order management system built with modern technologies. Trendies
     
     # Terminal 2: Start the frontend
     cd packages/frontend
-    pnpm run dev
+    pnpm run start:dev
     ```
 
 
